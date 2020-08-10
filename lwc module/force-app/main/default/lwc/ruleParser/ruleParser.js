@@ -33,14 +33,14 @@ const grammer  = `
     var returnval = {}
     returnval.operator = op;
     if(p2 instanceof Array && p2.length ==1){
-        returnval.param = p2[0];
-    }else{
-        returnval.param = p2;
-    }
-    if(p1 instanceof Array && p1.length ==1){
-        returnval.value = p1[0];
+        returnval.param = p1[0];
     }else{
         returnval.param = p1;
+    }
+    if(p1 instanceof Array && p1.length ==1){
+        returnval.value = p2[0];
+    }else{
+        returnval.param = p2;
     }
     return returnval;
     }
