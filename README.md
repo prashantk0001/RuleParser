@@ -61,6 +61,8 @@ You'd find a working example for RuleParser in the example module with each pack
 
 for node
 `const formulaParser = require("./index.js");`
+
+
 for lwc:
 `import { loadParserDependencies, formulaParser} from 'c/ruleParser'`
 
