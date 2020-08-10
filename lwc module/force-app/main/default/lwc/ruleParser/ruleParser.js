@@ -32,15 +32,15 @@ const grammer  = `
     expression = whitespace? p1:param whitespace? op:operator? whitespace? p2:param? whitespace? {
     var returnval = {}
     returnval.operator = op;
-    if(p2 instanceof Array && p2.length ==1){
+    if(p1 instanceof Array && p1.length ==1){
         returnval.param = p1[0];
     }else{
         returnval.param = p1;
     }
-    if(p1 instanceof Array && p1.length ==1){
+    if(p2 instanceof Array && p2.length ==1){
         returnval.value = p2[0];
     }else{
-        returnval.param = p2;
+        returnval.value = p2;
     }
     return returnval;
     }
