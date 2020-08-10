@@ -1,0 +1,9 @@
+<html>
+    <script src="lib/peg-0.10.0.min.js"></script>
+    <script src="index.js"></script>
+    
+    <script>
+        let obj = formulaParser.parse(`X != Y && U == 6 && (O == 9 || U != 9)`);
+        console.log(obj);
+    </script>
+</html>
